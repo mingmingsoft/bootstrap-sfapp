@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>任务</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="nav navbar-default navbar-fixed-top dropup text-center">
+    <a class="pull-left text-muted finda" href="find.html"><i class="glyphicon glyphicon-chevron-left"></i></a>
+
+    <div class="btn-group finddiv" role="group tablist" aria-label="..." style="padding:5px;">
+        <a type="button" class="btn btn-default" href="#rwsc" aria-controls="rwsc" role="tab"
+           data-toggle="tab">任务市场</a>
+        <a type="button" class="btn btn-default" href="#wfb" aria-controls="wfb" role="tab" data-toggle="tab">我发布</a>
+        <a type="button" class="btn btn-default" href="#wpd" aria-controls="wpd" role="tab" data-toggle="tab">我抢到</a>
+    </div>
+</nav>
+<div class="tab-content infolist">
+    <div role="tabpanel" class="tab-pane active" id="rwsc">
+        <ul class="list-group">
+            <!--列表1-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <address>深圳南山区海岸城凯宾斯基16F</address>
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">剩余配送时间<label class="text-danger">88</label>分钟</div>
+                </div>
+                <div class="pull-right">
+                    <div class="text-center timediv">
+                        <label class="text-danger">抢</label>
+                        <br>
+
+                        <p class="text-danger">07:22</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表2-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <address>深圳南山区海岸城凯宾斯基16F</address>
+                    <div class="pull-left">
+                        <span>4kg</span> <span class="label label-default">COD</span>
+                    </div>
+                    <div class="pull-right">剩余配送时间<label class="text-danger">88</label>分钟</div>
+                </div>
+                <div class="pull-right">
+                    <div class="text-center timediv">
+                        <label class="text-danger">抢</label>
+
+                        <p class="text-danger">07:22</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表3-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <address>深圳南山区海岸城凯宾斯基16F</address>
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">剩余配送时间<label class="text-danger">88</label>分钟</div>
+                </div>
+                <div class="pull-right">
+                    <div class="text-center timediv">
+                        <label class="text-danger">抢</label>
+
+                        <p class="text-danger">07:22</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表4-->
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="wfb">
+        <ul class="list-group">
+            <!--列表1-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>深圳南山区海岸城凯宾斯基16F</small>
+                    <strong>张生</strong>
+                    <br>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <p>距离结束还有</p>
+
+                    <p class="text-danger">07:22</p>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表2-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>深圳南山区海岸城凯宾斯基16F</small>
+                    <strong>张生</strong>
+                    <br>
+
+                    <div class="pull-left"><span>4kg</span> <span class="label label-default">COD</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <p>距离结束还有</p>
+
+                    <p class="text-danger">07:22</p>
+
+                    <div class="groupbtn menr" style="right: 0">
+                        <button type="button" class="">取消发布</button>
+                    </div>
+                </div>
+                <i class="glyphicon glyphicon-chevron-left pull-right" onclick="show('.menr')"
+                   style="position: absolute;right: 4px;top: 36%;"></i>
+
+                <div class="clearfix"></div>
+            </li>
+            <!--列表3-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>深圳南山区海岸城凯宾斯基16F</small>
+                    <strong>张生</strong>
+                    <br>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <p>距离结束还有</p>
+
+                    <p class="text-danger">07:22</p>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表4-->
+            <li class="list-group-item">
+                <div class="yiqiang-div">
+                    <strong>已抢</strong>
+                </div>
+                <div class="pull-left">
+                    <p>
+                        <small>深圳南山区海岸城凯宾斯基16F</small>
+                        <strong>张生</strong>
+                    </p>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <div class="text-right">
+                        <p class="text-danger">20分</p>
+
+                        <small>剩余取件时间</small>
+                    </div>
+                    <div>
+                        <small>发布人：张三
+                            <button class="btn btn-default btn-xs">通话</button>
+                        </small>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="yiqiang-div">
+                    <strong>已抢</strong>
+                </div>
+                <div class="pull-left">
+                    <p>
+                        <small>深圳南山区海岸城凯宾斯基16F</small>
+                        <strong>张生</strong>
+                    </p>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <div class="text-right">
+                        <p class="text-danger">20分</p>
+
+                        <small>剩余取件时间</small>
+                    </div>
+                    <div>
+                        <small>发布人：张三
+                            <button class="btn btn-default btn-xs">通话</button>
+                        </small>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="wpd">
+        <ul class="list-group">
+            <!--列表1-->
+            <li class="list-group-item disabled">
+                <div class="pull-left">
+                    <p>
+                        <small>深圳南山区海岸城凯宾斯基16F</small>
+                        <strong>张生</strong>
+                    </p>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                        <br>
+                        <small>剩余派送时间：<b class="text-danger">88</b>分钟</small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <p class="text-danger">20分</p>
+                    <small>剩余取件时间</small>
+                    <br>
+
+                    <div class="pull-right">
+                        <small>发布人：张三
+                            <button class="btn btn-default btn-xs">通话</button>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </li>
+            <!--列表2-->
+            <li class="list-group-item disabled">
+                <div class="pull-left">
+                    <p>
+                        <small>深圳南山区海岸城凯宾斯基16F</small>
+                        <strong>张生</strong>
+                    </p>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                        <br>
+                        <small>剩余派送时间：<b class="text-danger">88</b>分钟</small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <p class="text-danger">20分</p>
+
+                    <small>剩余取件时间</small>
+                    <br>
+
+                    <div class="pull-right">
+                        <small>发布人：张三
+                            <button class="btn btn-default btn-xs">通话</button>
+                        </small>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表3-->
+            <li class="list-group-item disabled">
+                <div class="pull-left">
+                    <p>
+                        <small>深圳南山区海岸城凯宾斯基16F</small>
+                        <strong>张生</strong>
+                    </p>
+
+                    <div class="pull-left"><span>4kg</span></div>
+                    <div class="pull-right">
+                        <small>单号<label>211245</label></small>
+                        <br>
+                        <small>剩余派送时间：<b class="text-danger">88</b>分钟</small>
+                    </div>
+                </div>
+                <div class="pull-right text-center">
+                    <p class="text-danger">20分</p>
+
+                    <small>剩余取件时间</small>
+                    <br>
+                    <div class="pull-right">
+                        <small>发布人：张三
+                            <button class="btn btn-default btn-xs">通话</button>
+                        </small>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表4-->
+        </ul>
+    </div>
+</div>
+
+</body>
+<script src="../js/index.js"></script>
+</html>

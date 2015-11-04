@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>任务</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="nav navbar-default navbar-fixed-top dropup text-center">
+    <a class="navbar-brand navbar text-left" href="communication.html" style="width: 20%;margin: 0;color: #FFF"><i
+            class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="navbar-brand navbar" href="#" style="width: 50%;margin: 0">群聊</a>
+    <a class="navbar-brand navbar" href="#" style="width: 30%;margin: 0; color: #FFF">
+        <small>查看成员</small>
+    </a>
+</nav>
+
+<!--<img src="../images/msns.png" width="100%" style="padding: 0;margin: 0">-->
+<div>
+    <ul class="chat-thread">
+        <li class="chatright">Are we meeting today?</li>
+        <li class="chatleft"><span class="chatname">张三</span>yes, what time suits you?</li>
+        <li class="chatleft"><span class="chatname">张三</span>I was thinking after lunch,I have a meeting in the morning</li>
+        <li class="chatright">Are we meeting today?</li>
+        <li class="chatright">yes, what time suits you?</li>
+        <li class="chatleft"><span class="chatname">张三</span>I was thinking after lunch, I have a meeting in the morning
+        </li>
+        <li class="chatright">Are we meeting today?</li>
+        <li class="chatleft"><span class="chatname">张三</span>yes, what time suits you?</li>
+        <li class="chatleft"><span class="chatname">张三</span>I was thinking after lunch,I have a meeting in the morning</li>
+        <li class="chatright">Are we meeting today?</li>
+        <li class="chatright">yes, what time suits you?</li>
+        <li class="chatleft"><span class="chatname">张三</span>I was thinking after lunch, I have a meeting in the morning
+        </li>
+    </ul>
+</div>
+
+
+<nav class="nav navbar-default navbar-fixed-bottom chatbox text-center">
+    <div class="navbar-brand navbar" style="width: 15%;padding: 0;margin: 0">
+        <button class="button  button-circle">
+            语音
+        </button>
+    </div>
+
+
+    <a class="navbar-brand navbar" style="width:70%;">
+        <textarea id="textarea" onpropertychange="MaxMe(this)" onchange="MaxMe(this)" oninput="MaxMe(this)"></textarea>
+    </a>
+
+    <div class="navbar-brand navbar" style="width: 15%;padding: 0;margin: 0">
+        <button class="button button-circle">
+            表情
+        </button>
+    </div>
+</nav>
+</body>
+<script src="../js/index.js"></script>
+<link rel="stylesheet" href="../css/buttons.css">
+<script type="text/javascript">
+    $(window).resize(function () {
+        calah();
+    });
+    $(window).load(function () {
+        calah();
+    });
+    function calah() {
+        $('ul.chat-thread li:last-child').css('margin-bottom', parseInt($('.navbar-fixed-bottom').css("height")) + 10);
+    }
+    function MaxMe(o) {
+        var h = o.scrollTop + o.scrollHeight;
+        if (h > 35) {
+            $(o).css("height", h);
+            $(".navbar-fixed-bottom").css("height", h + 10);
+            calah();
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    }
+</script>
+</html>

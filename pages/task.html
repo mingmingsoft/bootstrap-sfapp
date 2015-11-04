@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>任务</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--头部导航-->
+<nav class="nav navbar-default navbar-fixed-top dropup text-center">
+    <div class="btn-group" role="group tablist" aria-label="..." style="padding:10px 0;">
+        <a type="button" class="btn btn-default" href="#dwc" aria-controls="dwc" role="tab"
+           data-toggle="tab">待完成</a>
+        <a type="button" class="btn btn-default" href="#dfp" aria-controls="dfp" role="tab"
+           data-toggle="tab">待分配</a>
+        <a type="button" class="btn btn-default" href="#ywc" aria-controls="ywc" role="tab"
+           data-toggle="tab">已完成</a>
+    </div>
+</nav>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="dwc">
+        <p class="bg-primary text-center">待完成任务60</p>
+        <ul class="list-group">
+            <!--列表1-->
+            <li class="list-group-item">
+                <a class="text-muted" href="Orderdetail.html">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789 <span class="label label-danger">急</span> <span class="label label-danger"
+                                                                                  style="position: relative">催<i
+                        class="text-danger">9</i></span>
+                </div>
+                <div class="pull-right">
+                    <div class="count-right">25</div>
+                </div>
+                <div class="clearfix"></div>
+                </a>
+            </li>
+            <!--列表2-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789 <span class="label label-danger">急</span> <span class="label label-danger"
+                                                                                  style="position: relative">催<i
+                        class="text-danger">9</i></span>
+                </div>
+                <div class="pull-right">
+                    <div class="count-right">29</div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表3-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789 <span class="label label-danger">急</span> <span class="label label-danger"
+                                                                                  style="position: relative">催<i
+                        class="text-danger">9</i></span> &nbsp; &nbsp;<span class="label label-default"><i
+                        class="glyphicon glyphicon-align-center"></i></span> <span
+                        class="label label-default">COD</span> <span class="label label-default">生鲜</span>
+                </div>
+                <div class="pull-right">
+                    <button class="count-right" disabled="disabled">29</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表4-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789
+                    <span class="label label-default"><i class="glyphicon glyphicon-align-center"></i></span>
+                </div>
+                <div class="pull-right">
+                    <button class="count-right" disabled="disabled">29</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表5-->
+            <li class="list-group-item">
+                <i class="glyphicon glyphicon-chevron-right pull-left" onclick="show('.menl')" style="position: absolute;left: 4px;top: 36%; z-index: 999"></i>
+
+                <div class="pull-left">
+                    <div class="groupbtn menl" style="left: 0">
+                        <button type="button" class="">发布到任务市场</button>
+                    </div>
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789
+                    <span class="label label-danger">急</span>
+                </div>
+                <div class="pull-right">
+                    <button class="count-right" disabled="disabled">29</button>
+                </div>
+
+                <div class="groupbtn menr">
+                    <button type="button" class="btn btn-link">拨打</button>
+                    <button type="button" class="btn btn-link">短信</button>
+                    <button type="button" class="btn btn-link">聊天</button>
+                </div>
+                <i class="glyphicon glyphicon-chevron-left pull-right" onclick="show('.menr')"
+                   style="position: absolute;right: 4px;top: 36%;"></i>
+
+                <div class="clearfix"></div>
+            </li>
+            <!--列表6-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789
+                    <span class="label label-danger">急</span>
+                </div>
+
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="dfp">
+        <ul class="list-group">
+            <!--列表1-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>0755</small><strong>123456</strong>
+                </div>
+                <div class="pull-right text-danger">
+                    <strong>超时未领</strong>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表2-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>0755</small><strong>123456</strong>
+                </div>
+                <div class="pull-right text-danger">
+                    <!--<strong>超时未领</strong>-->
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表3-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>0755</small><strong>123456</strong>
+                </div>
+                <div class="pull-right text-danger">
+                    <!--<strong>超时未领</strong>-->
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表4-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>0755</small><strong>123456</strong>
+                </div>
+                <div class="pull-right text-danger">
+                    <!--<strong>超时未领</strong>-->
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表5-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>0755</small><strong>123456</strong>
+                </div>
+                <div class="pull-right text-danger">
+                    <!--<strong>超时未领</strong>-->
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表6-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <small>0755</small><strong>123456</strong>
+                </div>
+                <div class="pull-right text-danger">
+                    <!--<strong>超时未领</strong>-->
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="ywc"><p class="bg-success text-center">已完成任务60</p>
+        <ul class="list-group">
+            <!--列表1-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789 <span class="label label-danger">急</span> <span class="label label-danger"
+                                                                                  style="position: relative">催<i
+                        class="text-danger">9</i></span>
+                </div>
+                <div class="pull-right">
+                    <div class="count-right">25</div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表2-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789 <span class="label label-danger">急</span> <span class="label label-danger"
+                                                                                  style="position: relative">催<i
+                        class="text-danger">9</i></span>
+                </div>
+                <div class="pull-right">
+                    <div class="count-right">29</div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表3-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789 <span class="label label-danger">急</span> <span class="label label-danger"
+                                                                                  style="position: relative">催<i
+                        class="text-danger">9</i></span> &nbsp; &nbsp;<span class="label label-default"><i
+                        class="glyphicon glyphicon-align-center"></i></span> <span
+                        class="label label-default">COD</span> <span class="label label-default">生鲜</span>
+                </div>
+                <div class="pull-right">
+                    <button class="count-right" disabled="disabled">29</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表4-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <div class="groupbtn">
+                        <button type="button" class="">发布到任务市场</button>
+                    </div>
+
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789
+                    <span class="label label-default"><i class="glyphicon glyphicon-align-center"></i></span>
+                </div>
+                <div class="pull-right">
+                    <button class="count-right" disabled="disabled">29</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表5-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789
+                    <span class="label label-danger">急</span>
+                </div>
+                <div class="pull-right">
+                    <button class="count-right" disabled="disabled">29</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!--列表6-->
+            <li class="list-group-item">
+                <div class="pull-left">
+                    <strong>深圳南山区海岸城凯宾斯基16F</strong> <strong class="name-left">张生</strong><br>
+                    0755123456789
+                    <span class="label label-danger">急</span>
+                </div>
+
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<div class="ewm"><i class="glyphicon glyphicon-qrcode" data-toggle="modal" data-target="#myModal">
+</i></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="radmenu">
+        <a href="#" class="show" data-dismiss="modal" aria-label="Close"><i class="glyphicon glyphicon-remove"></i></a>
+        <ul>
+            <li> <a href="#" class="">接受转件</a> </li>
+            <li> <a href="#">查件</a> </li>
+            <li> <a href="#">妥投</a> </li>
+            <li> <a href="#">领件</a> </li>
+        </ul>
+    </div>
+</div>
+<!--底部导航-->
+<nav class="nav navbar-default navbar-fixed-bottom dropup text-center">
+    <a class="navbar-brand navbar task" href="task.html" style="width: 25%"><i class="glyphicon glyphicon-th"></i>
+
+        <p>任务</p></a>
+    <a class="navbar-brand navbar" href="communication.html" style="width: 25%"><i
+            class="glyphicon glyphicon-phone-alt"></i>
+
+        <p>通讯</p></a>
+    <a class="navbar-brand navbar" href="find.html" style="width: 25%"><i class="glyphicon glyphicon-search"></i>
+
+        <p>发现</p></a>
+    <a class="navbar-brand navbar" href="aboutme.html" style="width: 25%"><i class="glyphicon glyphicon-user"></i>
+
+        <p>我</p></a>
+</nav>
+
+</body>
+<script src="../js/index.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $('.task').addClass('fontactive')
+    });
+</script>
+</html>
